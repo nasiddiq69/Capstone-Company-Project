@@ -1,0 +1,2 @@
+# Keep this file empty until the team agrees on required libraries.
+# Add pinned, tested dependencies here as the application develops.

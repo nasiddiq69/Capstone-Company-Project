@@ -1,0 +1,1 @@
+"""Shared Workspace System package."""
