@@ -25,6 +25,8 @@ Starter repository scaffold. Confirm the final requirements with your mentor bef
 │       ├── __init__.py
 │       ├── models.py
 │       └── reservation_service.py
+├── scripts/
+│   └── explore_dataset.py
 ├── tests/
 │   └── test_reservation_service.py
 ├── .env.example
@@ -50,6 +52,13 @@ Starter repository scaffold. Confirm the final requirements with your mentor bef
    ```powershell
    python -m unittest discover -s tests -v
    ```
+5. Load and inspect the CardiacUDC training split:
+   ```powershell
+   python scripts/explore_dataset.py
+   ```
+   The first run downloads the dataset from Hugging Face into the local cache.
+   The dataset files are not stored in Git; each collaborator downloads their
+   own copy when they run the script.
 
 ## Setup (macOS/Linux)
 ```bash
@@ -57,6 +66,7 @@ python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
 pip install -r requirements.txt
+python scripts/explore_dataset.py
 python -m unittest discover -s tests -v
 ```
 

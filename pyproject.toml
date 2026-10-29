@@ -7,7 +7,10 @@ name = "shared-workspace-system"
 version = "0.1.0"
 description = "Starter project for a shared workspace reservation system"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "datasets",
+    "matplotlib",
+]
 
 [tool.setuptools]
 package-dir = {"" = "src"}
